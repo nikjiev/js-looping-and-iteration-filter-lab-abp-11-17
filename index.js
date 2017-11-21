@@ -2,6 +2,7 @@
 function findMatching(drivers, match){
   let matchingDrivers = drivers.filter(function(driver) {
     return driver.toLowerCase() === match.toLowerCase()
+    driver
   });
   return matchingDrivers;
 }
