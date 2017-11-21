@@ -5,3 +5,12 @@ function findMatching(drivers, match){
   });
   return matchingDrivers;
 }
+
+function fuzzyMatch(drivers, match) {
+  let matchingDrivers = drivers.filter(function(driver){
+    if (driver[0] === match [0]) {
+      return match
+    }
+  });
+  return matchingDrivers;
+}
